@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="portfolio.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+        <header class="header">
+            <div class="header-container">
+
+                <img class="logo" src="images/logo.svg" alt="logo">
+
+               
+                <ul class="hide-links">
+                    <li class="first"><a class="link-items" href="#home">Home</a></li>
+                    <li class="second"><a class="link-items" href="#skills">My Skills</a></li>    
+                    <li class="third"><a class="link-items" href="#projects">My Projects</a><li>
+                </ul>
+                
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <svg class="menu" id="toggle" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clipRule="evenodd" />
+                    </svg>
+                    
+                    <a class="special" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            
+        </header>
+        
+        <!-- hERO SEction-->
+    <div class="container">
+        
+        <div class="hero" id="home">
+            <div class="left-side">
+                <span>Hi I am Hansi Çaushi</span>
+                <h1>Frontend Developer</h1>
+                <p>I'm a passionate Frontend Developer, with over 1 year of studying and practicing on web pages and web apps . I am always
+                motivated to
+                learn new technologies and prefer to keep up with the latest trends and best practices in the web development industry.
+                I own good
+                analytical and problem-solving skills, which allow me to create solutions for any problem.
+                </p>
+                <a href="#projects" class="special special-work">
+                    See my work
+                    <svg class="arrow" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clipRule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="right-side">
+                <img class="me" src="images/john.svg" alt="Display image">
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <ul>
+                <li>Exelent knowledge of HTML/CSS/JS</li>
+                <li>Translating a design into a responsive webpage</li>
+                <li>Practical knowledge of SASS, Tailwind CSS</li>
+                <li>knowledge of React,Redux</li>
+                <li>Experience with Adobe XD and Figma</li>
+                <li>knowledge of Firebase</li>
+                <li>Very good in working with data and REST Api</li>
+                <li>Experience with Git & Github</li>
+            </ul>
+        </div>
+
+        <!-- Tecnologies i use-->
+        <div class="tittle">
+            <h1 class="projets">Technologies, Witch I Use</h1>
+        </div>
+
+        <main class="main bd-grid">
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/html.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>HTML</p>
+                </div>
+            </article>
+        
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/css.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>CSS</p>
+                </div>
+            </article>
+        
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/js.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>JS</p>
+                </div>
+                
+            </article>
+        
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/react.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>REACT</p>
+                </div>
+            </article>
+        
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/f.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>FIREBASE</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/adobe.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>ADOBE XD</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="images/redux.png" alt="">
+                </div>
+                <div class="card__name">
+                    <p>REDUX</p>
+                </div>
+            </article>
+        
+        </main>
+
+
+        <!-- Portfolio -->
+        <div class="tittle">
+            <h1 class="projets">My Projects</h1>
+        </div>
+        
+        <div class="swiper mySwiper" id="projects">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="portfolio">
+                        <img class="app" src="images/work6.png">
+                        <div class="data">
+                            <h3 class="main">Chat App</h3>
+                            <p class="para">The Chat App is created with Firebase , React and some react
+                            dependences. First you need to create an account and afterwards
+                            you can log-in to your account. When you’re currently logged in you
+                            can see your profile and you can go to home page, and send a
+                            message or photo to the direct chat with other registered users.
+                            The Chat App has authentication, which is managed from Firebase
+                            and stores the messages to Firestore. It is fully responsive for small
+                            devices.
+                            </p>
+                            <a href="https://peaceful-fermi-715236.netlify.app" class="btn">See Live
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                    <div class="swiper-slide">
+                        <div class="portfolio">
+                            <img class="app" src="images/work3.jpg">
+                        <div class="data">
+                            <h3 class="main">Meme Generator</h3>
+                            <p class="para">This is a meme generator web app. It was my first react project . It’s
+                            very simple to use . So basically you can write anything you want in
+                            the input and the app will rewrite whatever you’ve written in the
+                            top or bottom of the photo. When you press generate a new meme
+                            button it will change the photo. It is built with a simple meme api
+                            which fetches top 500 of the most famous memes.
+                        </p>
+                        <a href="https://eloquent-kepler-2c4ad0.netlify.app" class="btn">See Live
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="portfolio">
+                        <img class="app" src="images/work4.png">
+                        <div class="data">
+                            <h3 class="main">Tic Tac Toe</h3>
+                            <p class="para">A simple tic-tac-toe game build in HTML/CSS/Javacript
+                            </p>
+                            <a href="https://romantic-mirzakhani-c73f85.netlify.app" class="btn">See Live
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio">
+                        <img class="app" src="images/work2.png">
+                        <div class="data">
+                            <h3 class="main">Newspaper</h3>
+                            <p class="para">The newspaper project is a simple project which is styled with CSS
+                            grid. It’s fully responsive, and it has different layouts for all screen
+                            sizes.
+                            </p>
+                            <a href="https://gracious-almeida-d74064.netlify.app" class="btn">See Live
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio">
+                        <img class="app" src="images/work5.png">
+                        <div class="data">
+                            <h3 class="main">Online Store</h3>
+                            <p class="para">The online store is created with HTML, CSS and JS. 
+                            The online stores has become very popular nowadays. I decited
+                            to create this clone of an actual online store
+                        </p>
+                        <a href="https://infallible-hopper-f1b04c.netlify.app" class="btn">See Live
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio">
+                        <img class="app" src="images/Screenshot_1.png">
+                        <div class="data">
+                            <h3 class="main">Chemistry Courses</h3>
+                            <p class="para">The Chemistry webpage is built in HTML, CSS and Javascript. The webpage
+                            is responsive for small devices as well, and it contains a dark mode.
+                            </p>
+                            <a href="https://amazing-kirch-bd3deb.netlify.app" class="btn">See Live
+                            <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="portfolio">
+                        <img class="app" src="images/work7.png">
+                        <div class="data">
+                            <h3 class="main">Webpage</h3>
+                            <p class="para">This web page was my first project. It is created with HTML, SASS
+                            and JS. It consist of a "hero" section which is styled with CSS
+                            Flexbox. The sections below are styled in CSS Grid. The contact
+                            form contains an google maps iframe. It’s fully responsive.
+                            </p>
+                            <a href="https://trusting-beaver-f2e968.netlify.app" class="btn">See Live
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                     </div>
+                </div>
+
+        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+
+    <footer>
+        <div class="footer-container container" id="contact">
+            <div class="left-col">
+                <h3 class="name">Hansi Çaushi</h3>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/hansi.caushi.90"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hansi_caushi/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/hansicaushi559"><i class="fab fa-github"></i></a>
+                    <a href="https://al.linkedin.com/in/hansi-caushi-976b40200?trk=people-guest_people_search-card"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="rights-text">&copy; 2022 Created By Hansi | All Rights Reserved.</p>
+            </div>
+    
+            <div class="right-col">
+                <h1>Show your interes</h1>
+                <div class="border"></div>
+                <p>Enter Your Email and get in contact with me</p>
+                <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="f-btn" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="portfolio.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        loop: true,
+       
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        
+    });
+</script>
+
+</html>
